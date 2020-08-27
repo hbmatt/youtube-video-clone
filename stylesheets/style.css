@@ -5,6 +5,10 @@ body {
   font-size: 10px;
 }
 
+p {
+  margin: 0;
+}
+
 .navbar {
   height: 56px;
   display: flex; 
@@ -215,4 +219,61 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.column .title {
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 20px;
+  color: rgb(3,3,3);
+  margin-bottom: 12px;
+}
+
+.next-video {
+  height: 102px;
+  padding: 0 0 8px 0;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.next-video img {
+  float: left;
+  margin-right: 8px;
+}
+
+.next-video .video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.next-video .video-details {
+  color: rgb(96,96,96);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.suggested-video {
+  height: 102px;
+}
+
+.suggested-video img {
+  float: left;
+  margin-right: 8px;
+}
+
+.suggested-video .video-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 4px;
+}
+
+.suggested-video .video-details {
+  color: rgb(96,96,96);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
 }
