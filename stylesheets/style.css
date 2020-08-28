@@ -3,6 +3,7 @@ body {
   padding: 0;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 10px;
+  color: rgb(3,3,3);
 }
 
 p {
@@ -167,6 +168,7 @@ p {
 
 .section {
   display: block;
+  margin-bottom: 1.5rem;
 }
 
 .container {
@@ -190,21 +192,21 @@ p {
   flex-grow: 1;
   flex-shrink: 1;
   padding: 1.5rem 1.5rem 0 0;
-  margin-left: 1.5rem;
 }
 
 .column.is-two-thirds {
   flex: none;
-  width: 66.6666%;
   max-width: 1085px;
   min-width: 852px;
+  width: 68.5%;
+  margin-left: 1.5rem;
 }
 
 .column.is-one-quarter {
   flex: none;
-  width: 25%;
   max-width: 402px;
   min-width: 300px;
+  width: 26%;
 }
 
 .video-container {
@@ -229,6 +231,270 @@ p {
   margin-bottom: 12px;
 }
 
+.video-info {
+  padding: 20px 0 8px 0;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.video-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+
+.video-details p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  color: rgb(96,96,96);
+}
+
+.description {
+  height: 185px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.description .top-row {
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 12px;
+  padding-top: 16px;
+}
+
+.description .top-row .channel-image {
+  margin-right: 16px;
+}
+
+.description .top-row .channel-info {
+  flex: 1;
+}
+.description .top-row .channel-info .channel-name {
+  align-self: flex-start;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  padding-top: 7px;
+}
+
+.description .top-row .channel-info .channel-subs {
+  align-self: flex-start;
+  color: rgb(96,96,96);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-right: 4px;
+}
+
+.description .sub-button {
+  width: 105px;
+  height: 51px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.description .sub-button button {
+  height: 37px;
+  background-color: rgb(204,0,0);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.007px;
+  vertical-align: middle;
+  border: none;
+  font-family: 'Roboto', Arial, sans-serif;
+  border-radius: 2px;
+}
+
+.description .video-description {
+  margin-left: 64px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.description .video-description .content {
+  max-width: 615px;
+  height: 60px;
+}
+
+.description .video-description .expand {
+  height: 29px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.007px;
+  line-height: 21px;
+  margin-top: 8px;
+  color: rgb(96,96,96);
+}
+
+.comments .header {
+  height: 88px;
+  display: flex;
+  margin: 24px 0 32px 0;
+  flex-direction: column;
+}
+
+.comments .header .top-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+  height: 24px;
+}
+
+.comments .header .top-row .count {
+  align-self: flex-start;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 32px;
+  display: inline-block;
+}
+
+.comments .header .top-row .sort-by {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 24px;
+  color: rgb(96,96,96);
+}
+
+.sort-by i {
+  font-size: 15px;
+  margin-right: 9px;
+}
+
+.sort-by p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.007px;
+  line-height: 20px;
+}
+
+.comments .header .comment-box {
+  display: flex;
+}
+
+.comments .header .comment-box img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.comments .header .comment-box .placeholder {
+  padding-bottom:  4px;
+  border-bottom: 1px solid #e5e5e5;
+  flex: 1;
+  height: 21px;
+  color: rgb(96,96,96);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.comment .thumbnail {
+  flex: none;
+}
+
+.comment .thumbnail img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+
+.comment .content .info {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+.comment .content .info .name {
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 2px;
+  margin-right: 4px;
+  font-weight: 500;
+}
+
+.comment .content .info .time {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgb(96,96,96);
+}
+
+.comment .content .body {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.comment .content .stats {
+  height: 33px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+}
+
+.comment .content .stats i {
+  height: 32px;
+  width: 32px;
+  font-size: 16px;
+  color: rgb(144,144,144);
+  line-height: 32px;
+  text-align: center;
+}
+
+.comment .content .stats .vote-count {
+  margin-right: 8px;
+  color: rgb(96,96,96);
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.comment .content .stats .reply {
+  width: 69px;
+  line-height: 32px;
+  text-align: center;
+  color: rgb(96,96,96);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.007px;
+}
+
+.comment .content .replies {
+  color: rgb(6,95,212);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.007px;
+  line-height: 16px;
+}
+
+.comment .content .replies i {
+  height: 20px;
+  width: 20px;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-right: 8px;
+}
+
 .next-video {
   height: 102px;
   padding: 0 0 8px 0;
@@ -246,6 +512,8 @@ p {
   font-weight: 500;
   line-height: 16px;
   margin-bottom: 4px;
+  width: 202px;
+  margin-left: 176px;
 }
 
 .next-video .video-details {
@@ -269,6 +537,8 @@ p {
   font-weight: 500;
   line-height: 16px;
   margin-bottom: 4px;
+  width: 202px;
+  margin-left: 176px;
 }
 
 .suggested-video .video-details {
